@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculator App</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <script>
+        do{
+           var option = parseInt(prompt("Calculator App \n 1. Addition \n2. Subtraction \n3. Multiplication \n4. Division \n0. To Exit \n Please Choose Option:"));
+
+           
+
+           switch(option){
+                case 1:
+                   var num1 = parseInt(prompt("Please enter first number:"));
+                   var num2= parseInt(prompt("Please enter second number:"));
+                   var res=num1+num2;
+                   alert("Addition of "+num1+" and "+num2+" is "+res);
+                   break;
+                case 2:
+                   var num1 = parseInt(prompt("Please enter first number:"));
+                   var num2= parseInt(prompt("Please enter second number:"));
+                   var res=num1-num2;
+                   alert("Subtraction of "+num1+" and "+num2+" is "+res);
+                   break; 
+                case 3:
+                   var num1 = parseInt(prompt("Please enter first number:"));
+                   var num2= parseInt(prompt("Please enter second number:"));
+                   var res=num1*num2;
+                   alert("Multiplication of "+num1+" and "+num2+" is "+res);
+                   break;
+                case 4:
+                   var num1 = parseInt(prompt("Please enter first number:"));
+                   var num2= parseInt(prompt("Please enter second number:"));
+                   var res=num1/num2;
+                   alert("Division of "+num1+" and "+num2+" is "+res);
+                   break; 
+                case 0:
+                   alert("Thankyou...");
+                   break;
+                default:
+                    alert("Please enter valid option.") 
+                    break; 
+           }
+        }while(option!=0);
+    </script>
+</body>
+</html>
